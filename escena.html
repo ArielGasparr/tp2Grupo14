@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<script src="p5.min.js"></script>
+
+</head>
+
+<body>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+const sketch = params.get("sketch");
+
+const script = document.createElement("script");
+
+script.src = "sketch_" + sketch + ".js";
+
+document.body.appendChild(script);
+
+</script>
+
+</body>
+
+</html>
