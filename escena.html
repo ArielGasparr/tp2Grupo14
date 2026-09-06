@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no"
+>
+
+<style>
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    background: rgb(8, 3, 2);
+}
+
+canvas {
+    display: block;
+    touch-action: none;
+}
+
+</style>
+
+<script src="p5.min.js"></script>
+
+</head>
+
+<body>
+
+<script>
+
+const params =
+    new URLSearchParams(
+        window.location.search
+    );
+
+const sketch =
+    params.get("sketch");
+
+
+const script =
+    document.createElement("script");
+
+
+script.src =
+    "sketch_" +
+    sketch +
+    ".js";
+
+
+document.body.appendChild(
+    script
+);
+
+</script>
+
+</body>
+
+</html>

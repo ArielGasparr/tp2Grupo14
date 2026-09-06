@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+>
+
+<title>Las 9 palabras</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background: black;
+    color: white;
+
+    font-family: "Courier New", monospace;
+
+    min-height: 100dvh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.grid {
+
+    width: min(100%, 700px);
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+a {
+
+    border: 1px solid white;
+
+    color: white;
+
+    text-decoration: none;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    min-height: 120px;
+
+    padding: 10px;
+
+    transition: .2s;
+}
+
+a:hover {
+
+    background: white;
+    color: black;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 12px;
+    }
+
+    a {
+
+        min-height: 90px;
+
+        font-size: 14px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+<div class="grid">
+
+<a href="escena.html?sketch=memoria">
+MEMORIA
+</a>
+
+<a href="escena.html?sketch=herencia">
+HERENCIA
+</a>
+
+<a href="escena.html?sketch=caducidad">
+CADUCIDAD
+</a>
+
+<a href="escena.html?sketch=identidad">
+IDENTIDAD
+</a>
+
+<a href="escena.html?sketch=empatia">
+EMPATÍA
+</a>
+
+<a href="escena.html?sketch=colaboracion">
+COLABORACIÓN
+</a>
+
+<a href="escena.html?sketch=incertidumbre">
+INCERTIDUMBRE
+</a>
+
+<a href="escena.html?sketch=ansiedad">
+ANSIEDAD
+</a>
+
+<a href="escena.html?sketch=expectativa">
+EXPECTATIVA
+</a>
+
+</div>
+
+</body>
+
+</html>
